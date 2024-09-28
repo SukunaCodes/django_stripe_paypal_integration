@@ -2,12 +2,10 @@ from django.shortcuts import render
 
 # Donation Page
 def donation(request):
-    pass
-
+    return render(request, 'donation/my_donation.html')
 # Successful payment
 def successful_payment(request):
-    pass
-
+    return render(request, 'donation/payment_success.html')
 # Failed payment
 def failed_payment(request):
-    pass
+    return render(request, 'donation/payment_failed.html')
